@@ -16,11 +16,7 @@ class ExpensesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: expenses.length,
-      itemBuilder: (ctx, index) => Dismissible(
-        key: ValueKey( expenses[index]),
-        onDismissed:(direction) {
-          onRemoveExpense(expenses[index]);
-        },
+      itemBuilder: (ctx, index) => Dismissible(key: ValueKey(expenses[index]),
         child: ExpenseItem(
           expenses[index],
         ),
