@@ -32,9 +32,10 @@ void main() {
               titleLarge: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
-                color: kColorScheme.secondaryContainer,
+                color: kColorScheme.onSecondaryContainer,
               ),
             ),
+            
       ),
       home: const Expenses(),
     ),
